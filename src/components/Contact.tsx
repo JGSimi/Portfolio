@@ -1,6 +1,6 @@
 "use client"
 
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { profileData } from '@/data/profile'
 import { animate } from 'motion'
 import { useEffect, useRef } from 'react'
@@ -47,13 +47,14 @@ export default function Contact() {
       icon: FaLinkedin,
       label: "LinkedIn",
       value: "joaosimi",
-      href: "https://linkedin.com/in/joaosimi",
+      href: "https://linkedin.com/in/joao-simi",
       color: "hover:text-blue-500"
     },
     {
       icon: FaMapMarkerAlt,
       label: "Localização",
       value: profileData.location,
+      href: `https://earth.google.com/web/search/${profileData.location}`,
       color: "hover:text-yellow-500"
     }
   ]

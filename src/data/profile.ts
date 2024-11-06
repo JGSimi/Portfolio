@@ -1,7 +1,7 @@
 export const profileData = {
   name: "João Gabriel Simi de Oliveira",
   role: "Web Developer",
-  location: "Foz do Iguaçu, PR, BR",
+  location: "Foz do Iguaçu, PR - BR",
   contact: {
     phone: "(45) 98843-1551",
     email: "joaosimi@icloud.com"
@@ -61,6 +61,10 @@ export const profileData = {
       { 
         name: "Figma",
         docUrl: "https://help.figma.com"
+      },
+      {
+        name: "Unreal Engine",
+        docUrl: "https://docs.unrealengine.com"
       }
     ],
     soft: [
@@ -91,11 +95,77 @@ export const profileData = {
     },
     {
       title: "Portfólio",
-      description: "Isso que você está vendo agora.",
+      description: "Meu portfólio pessoal, onde é possível ver meus projetos e entrar em contato comigo.",
       technologies: ["Next.js", "TypeScript", "Tailwind", "Motion"],
       githubUrl: "https://github.com/JGSimi/portfolio",
       liveUrl: "https://joaosimi.vercel.app",
       imageUrl: "https://example.com/portfolio.jpg"
+    }
+  ],
+
+  experiences: [
+    {
+      title: "Auxiliar Administrativo",
+      company: "Hospital Municipal",
+      period: "2021 - 2023",
+      description: [
+        "Responsável por planilhas de salário, escalas de funcionários e controle de almoxarifado",
+        "Auxílio na recepção e solução de problemas de pacientes",
+        "Desenvolvimento de habilidades organizacionais e de resolução de problemas"
+      ],
+      skills: ["Excel", "Gestão de Pessoas", "Organização", "Atendimento ao Cliente"]
+    },
+    {
+      title: "Porteiro",
+      company: "Condomínio Residencial",
+      period: "1 mês (Cobertura de férias)",
+      description: [
+        "Recebimento de entregas, monitoramento de câmeras de segurança e recepção de moradores e visitantes",
+        "Desenvolvimento de habilidades em atendimento e segurança"
+      ],
+      skills: ["Segurança", "Atendimento ao Cliente", "Monitoramento"]
+    },
+    {
+      title: "Auxiliar de Mecânica",
+      company: "Mecânica P.K",
+      period: "2024-2024",
+      description: [
+        "Manutenção de veículos"
+      ],
+      skills: ["Mecânica Básica Automotiva"]
+    },
+    {
+      title: "Estágio - Auxiliar de TI",
+      company: "Grupo Wish",
+      period: "2024-Atualmente",
+      description: [
+        "Manutenção de computadores e servidores"
+      ],
+      skills: ["Manutenção de Computadores"]
+    }
+  ],
+
+  certifications: [
+    {
+      title: "Web Development Fundamentals",
+      organization: "freeCodeCamp",
+      date: "2023",
+      credentialUrl: "https://freecodecamp.org/certification/...",
+      skills: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      title: "React Development",
+      organization: "Meta",
+      date: "2023",
+      credentialUrl: "https://coursera.org/verify/...",
+      skills: ["React", "Redux", "Testing"]
+    },
+    {
+      title: "TypeScript Essentials",
+      organization: "Microsoft",
+      date: "2024",
+      credentialUrl: "https://learn.microsoft.com/...",
+      skills: ["TypeScript", "OOP", "Design Patterns"]
     }
   ]
 } 

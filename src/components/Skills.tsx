@@ -4,8 +4,8 @@ import { profileData } from '@/data/profile'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { 
   SiNextdotjs, SiNodedotjs, SiTailwindcss, SiTypescript, 
-  SiReact, SiC, SiPython, SiJavascript, SiHtml5, SiCss3,
-  SiGit, SiFigma
+  SiReact, SiC, SiPython, SiJavascript, SiHtml5,
+  SiGit, SiFigma, SiUnrealengine
 } from 'react-icons/si'
 
 const techIcons = {
@@ -19,7 +19,8 @@ const techIcons = {
   "JavaScript": SiJavascript,
   "HTML/CSS": SiHtml5,
   "Git": SiGit,
-  "Figma": SiFigma
+  "Figma": SiFigma,
+  "Unreal Engine": SiUnrealengine
 }
 
 export default function Skills() {

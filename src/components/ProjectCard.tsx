@@ -29,28 +29,30 @@ export default function ProjectCard({
         opacity-0 group-hover:opacity-100" 
         aria-hidden="true" />
 
-      <div className="relative">
-        <h3 className="text-xl font-bold mb-3 transition-colors
-          dark:text-zinc-100 dark:group-hover:text-primary-light
-          text-zinc-800 group-hover:text-primary-dark">{title}</h3>
-        
-        <p className="mb-4 line-clamp-3
-          dark:text-zinc-400 text-zinc-600">{description}</p>
+      <div className="relative flex flex-col h-full justify-between space-y-4">
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold transition-colors
+            dark:text-zinc-100 dark:group-hover:text-primary-light
+            text-zinc-800 group-hover:text-primary-dark">{title}</h3>
+          
+          <p className="line-clamp-3 leading-relaxed
+            dark:text-zinc-400 text-zinc-600">{description}</p>
 
-        <ul className="flex flex-wrap gap-2 mb-6" role="list" aria-label="Tecnologias utilizadas">
-          {technologies.map((tech) => (
-            <li
-              key={tech}
-              className="px-3 py-1 rounded-full text-sm transition-all duration-200
-                dark:bg-zinc-700/30 dark:text-zinc-300 dark:hover:bg-zinc-700/50 dark:hover:text-primary-light
-                bg-zinc-200/50 text-zinc-700 hover:bg-zinc-200 hover:text-primary-dark"
-            >
-              {tech}
-            </li>
-          ))}
-        </ul>
+          <ul className="flex flex-wrap gap-2" role="list" aria-label="Tecnologias utilizadas">
+            {technologies.map((tech) => (
+              <li
+                key={tech}
+                className="px-3 py-1 rounded-full text-sm transition-all duration-200
+                  dark:bg-zinc-700/30 dark:text-zinc-300 dark:hover:bg-zinc-700/50 dark:hover:text-primary-light
+                  bg-zinc-200/50 text-zinc-700 hover:bg-zinc-200 hover:text-primary-dark"
+              >
+                {tech}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-center justify-around pt-4">
           <a
             href={githubUrl}
             target="_blank"
