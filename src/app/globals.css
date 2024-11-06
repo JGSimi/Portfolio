@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition duration-300;
+  }
+
+  input, textarea {
+    @apply p-2 border rounded-md w-full;
+  }
+}
+
+/* Estilos personalizados adicionais */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animações suaves */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
